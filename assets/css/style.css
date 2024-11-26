@@ -467,6 +467,8 @@ body {
   z-index: -1;
 }
 
+
+/* -------------------------------main------------------------- */
 /* hero */
 .hero-banner { display: none; }
 
@@ -496,9 +498,22 @@ body {
   margin-block-end: 45px;
 }
 
+/* brand */
+.brand {
+  --section-padding: 60px;
+  background-image: var(--gradient);
+}
 
+.brand .has-scrollbar { padding-block-end: 0; }
 
-/* -------------------------------main------------------------- */
+.brand .has-scrollbar::-webkit-scrollbar { display: none; }
+
+.brand-item {
+  min-width: calc(50% - 10px);
+  scroll-snap-align: start;
+}
+
+.brand-item > img { margin-inline: auto; }
 
 
 
